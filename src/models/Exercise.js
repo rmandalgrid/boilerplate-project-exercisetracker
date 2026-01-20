@@ -54,8 +54,8 @@ class ExerciseModel {
       params.push(filters.to);
     }
 
-    // Order by date
-    query += ' ORDER BY date DESC';
+    // Order by date (ascending - oldest first)
+    query += ' ORDER BY date ASC';
 
     // Add limit
     if (filters.limit) {
